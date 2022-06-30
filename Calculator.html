@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Calculator</title>
+	
+	<style>
+	.div{
+		width:355px;
+		height:270px;
+		background-color:black;
+		margin:auto;
+		padding:10px;
+		border-radius:10px;
+		
+	}
+	input[type="text"]{
+		width:300px;
+		height:30px;
+		padding:5px;
+		border-radius:5px;
+		border:none;
+		
+	
+	
+	}
+	input[type="reset"]{
+		width:40px;
+		height:38px;
+		border-radius:5px;
+		padding:5px;
+		border:none;
+		background-color:deeppink;
+		color:white;
+	
+	}
+	input[type="button"]{
+		width:85px;
+		height:38px;
+		background-color:#663399;
+		color:white;
+		border:none;
+		padding:0px 10px;
+		font-size:15px;
+		border-radius:8px 8px 8px 8px;
+	
+	}
+	
+	
+	
+	
+	
+	</style>
+	</head>
+	<body>
+		<div class="div">
+		<form name="cal">
+		<input type="text" name="display">
+		<input type ="reset" value="C" onclick="cal.display.value+=''">
+		<br>
+		<br>
+			<input type="button" value ="1"onclick="cal.display.value+='1'">
+			<input type="button" value ="2"onclick="cal.display.value+='2'">
+			<input type="button" value ="3"onclick="cal.display.value+='3'">
+			<input type="button" value ="/"onclick="cal.display.value+='/'">
+			<br><br>
+			<input type="button" value ="4"onclick="cal.display.value+='4'">
+			<input type="button" value ="5"onclick="cal.display.value+='5'">
+			<input type="button" value ="6"onclick="cal.display.value+='6'">
+			<input type="button" value ="*"onclick="cal.display.value+='*'">
+			<br><br>
+			<input type="button" value ="7"onclick="cal.display.value+='7'">
+			<input type="button" value ="8"onclick="cal.display.value+='8'">
+			<input type="button" value ="9"onclick="cal.display.value+='9'">
+			<input type="button" value ="-"onclick="cal.display.value+='-'">
+			<br><br>
+			<input type="button" value ="."onclick="cal.display.value+='.'">
+			<input type="button" value ="0"onclick="cal.display.value+='0'">
+			<input type="button" value ="=" style="background-color:deeppink;"
+			onclick="cal.display.value = eval(cal.display.value)">
+			<input type="button" value ="+"onclick="cal.display.value+='+'">
+			
+	
+	
+		</form>
+		</div>
+	
+	
+	
+	
+	
+	
+	</body>
+	
+
+
+
+
+
+
+
+
+
+</html>
